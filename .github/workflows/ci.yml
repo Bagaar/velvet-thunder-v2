@@ -1,3 +1,8 @@
+# TODO:
+# - Separate lint job
+# - Separate test jobs for docs-app and test-app (`floating` only for test-app, remove random test ports again)
+# - Percy check for docs-app
+
 name: CI
 
 on:
