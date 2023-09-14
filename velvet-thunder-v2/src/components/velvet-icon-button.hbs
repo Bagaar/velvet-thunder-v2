@@ -1,0 +1,31 @@
+{{#let
+  (-velvet/class-list
+    "velvet-icon-button"
+    (concat "velvet-icon-button-" (or @size "md"))
+    (concat "velvet-icon-button-" (or @variant "primary"))
+    (if @isRound "velvet-icon-button-round")
+    (if @isDisabled "velvet-icon-button-disabled")
+  )
+  as |className|
+}}
+  {{#if @isRenderless}}
+    {{yield (hash class=className)}}
+  {{else}}
+    <button
+      class={{className}}
+      disabled={{@isDisabled}}
+      type={{or @type "button"}}
+      {{on "click" this.clickHandler}}
+      {{@privateDropdownTrigger}}
+      ...attributes
+    >
+      {{#if @isLoading}}
+        <VelvetSpinner />
+      {{else if @isDisclosure}}
+        <VelvetDisclosureIcon class="velvet-icon-button-disclosure-icon" />
+      {{else}}
+        {{yield (hash class=className)}}
+      {{/if}}
+    </button>
+  {{/if}}
+{{/let}}

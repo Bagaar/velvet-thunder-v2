@@ -17,7 +17,11 @@
       "types": "./declarations/*.d.ts",
       "default": "./dist/*.js"
     },
-    "./addon-main.js": "./addon-main.cjs"
+    "./addon-main.js": "./addon-main.cjs",
+    "./test-support": {
+      "types": "./dist/test-support/index.d.ts",
+      "default": "./dist/test-support/index.js"
+    }
   },
   "typesVersions": {
     "*": {
@@ -49,13 +53,19 @@
     "test": "echo 'A v2 addon does not have tests, run tests in test-app'"
   },
   "dependencies": {
-    "@embroider/addon-shim": "^1.0.0"
+    "@ember/test-waiters": "^3.0.2",
+    "@embroider/addon-shim": "^1.0.0",
+    "@embroider/util": "^1.12.0",
+    "@floating-ui/dom": "^1.5.2",
+    "ember-modifier": "^4.1.0",
+    "ember-truth-helpers": "^4.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/plugin-proposal-decorators": "^7.20.13",
     "@babel/plugin-transform-class-static-block": "^7.20.0",
+    "@babel/plugin-transform-typescript": "^7.22.15",
     "@babel/preset-typescript": "^7.18.6",
     "@babel/runtime": "^7.17.0",
     "@embroider/addon-dev": "^4.1.0",
@@ -86,6 +96,7 @@
     "@typescript-eslint/parser": "^5.30.5",
     "babel-plugin-ember-template-compilation": "^2.2.0",
     "concurrently": "^8.0.1",
+    "ember-link": "^3.1.0",
     "ember-template-lint": "^5.11.2",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.3.0",
@@ -98,6 +109,13 @@
     "rollup-plugin-copy": "^3.4.0",
     "typescript": "^5.0.4"
   },
+  "peerDependencies": {
+    "@ember/test-helpers": "^3.2.0",
+    "@glimmer/component": "^1.1.2",
+    "@glimmer/tracking": "^1.1.2",
+    "@glint/template": "^1.1.0",
+    "ember-link": "^3.1.0"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
@@ -108,6 +126,29 @@
     "version": 2,
     "type": "addon",
     "main": "addon-main.cjs",
-    "app-js": {}
+    "app-js": {
+      "./components/velvet-avatar.js": "./dist/_app_/components/velvet-avatar.js",
+      "./components/velvet-button.js": "./dist/_app_/components/velvet-button.js",
+      "./components/velvet-checkbox-group.js": "./dist/_app_/components/velvet-checkbox-group.js",
+      "./components/velvet-checkbox.js": "./dist/_app_/components/velvet-checkbox.js",
+      "./components/velvet-disclosure-icon.js": "./dist/_app_/components/velvet-disclosure-icon.js",
+      "./components/velvet-dropdown.js": "./dist/_app_/components/velvet-dropdown.js",
+      "./components/velvet-dropdown/content.js": "./dist/_app_/components/velvet-dropdown/content.js",
+      "./components/velvet-icon-button.js": "./dist/_app_/components/velvet-icon-button.js",
+      "./components/velvet-input.js": "./dist/_app_/components/velvet-input.js",
+      "./components/velvet-link.js": "./dist/_app_/components/velvet-link.js",
+      "./components/velvet-progress.js": "./dist/_app_/components/velvet-progress.js",
+      "./components/velvet-radio-group.js": "./dist/_app_/components/velvet-radio-group.js",
+      "./components/velvet-radio.js": "./dist/_app_/components/velvet-radio.js",
+      "./components/velvet-select.js": "./dist/_app_/components/velvet-select.js",
+      "./components/velvet-select/option.js": "./dist/_app_/components/velvet-select/option.js",
+      "./components/velvet-spinner.js": "./dist/_app_/components/velvet-spinner.js",
+      "./components/velvet-switch.js": "./dist/_app_/components/velvet-switch.js",
+      "./components/velvet-tag.js": "./dist/_app_/components/velvet-tag.js",
+      "./components/velvet-textarea.js": "./dist/_app_/components/velvet-textarea.js",
+      "./components/velvet-tooltip.js": "./dist/_app_/components/velvet-tooltip.js",
+      "./components/velvet-tooltip/content.js": "./dist/_app_/components/velvet-tooltip/content.js",
+      "./helpers/-velvet/class-list.js": "./dist/_app_/helpers/-velvet/class-list.js"
+    }
   }
 }
