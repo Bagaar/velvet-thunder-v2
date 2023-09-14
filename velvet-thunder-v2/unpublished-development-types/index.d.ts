@@ -1,9 +1,9 @@
 // Add any types here that you need for local development only.
 // These will *not* be published as part of your addon, so be careful that your published code does not rely on them!
 
-import '@glint/environment-ember-loose';
+import "@glint/environment-ember-loose";
 
-declare module '@glint/environment-ember-loose/registry' {
+declare module "@glint/environment-ember-loose/registry" {
   // Remove this once entries have been added! 👇
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
   export default interface Registry {

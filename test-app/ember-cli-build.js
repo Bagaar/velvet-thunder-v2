@@ -1,15 +1,15 @@
-'use strict';
+"use strict";
 
-const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const EmberApp = require("ember-cli/lib/broccoli/ember-app");
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
-    'ember-cli-babel': { enableTypeScriptTransform: true },
+    "ember-cli-babel": { enableTypeScriptTransform: true },
     autoImport: {
-      watchDependencies: ['velvet-thunder-v2'],
+      watchDependencies: ["velvet-thunder-v2"],
     },
   });
 
-  const { maybeEmbroider } = require('@embroider/test-setup');
+  const { maybeEmbroider } = require("@embroider/test-setup");
   return maybeEmbroider(app);
 };
