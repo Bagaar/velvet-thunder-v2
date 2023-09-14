@@ -24,6 +24,10 @@ export default class VelvetSelectOption extends Component<VelvetSelectOptionSign
     return this.args.value === this.args.privateSelected;
   }
 
+  get valueAsString() {
+    return String(this.args.value);
+  }
+
   constructor(owner: unknown, args: VelvetSelectOptionSignature["Args"]) {
     super(owner, args);
 

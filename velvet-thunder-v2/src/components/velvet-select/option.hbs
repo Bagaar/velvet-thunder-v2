@@ -2,7 +2,6 @@
   {{#if (has-block)}}
     {{yield}}
   {{else}}
-    {{! @glint-expect-error }}
-    {{@value}}
+    {{this.valueAsString}}
   {{/if}}
 </option>
