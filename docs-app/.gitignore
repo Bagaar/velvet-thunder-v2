@@ -9,7 +9,6 @@
 /.env*
 /.pnp*
 /.eslintcache
-/coverage/
 /testem.log
 
 # ember-try
