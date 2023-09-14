@@ -1,3 +1,4 @@
 packages:
+  - docs-app
   - test-app
   - velvet-thunder-v2
