@@ -281,9 +281,6 @@ importers:
       stylelint-config-standard:
         specifier: ^34.0.0
         version: 34.0.0(stylelint@15.10.3)
-      stylelint-prettier:
-        specifier: ^4.0.2
-        version: 4.0.2(prettier@3.0.3)(stylelint@15.10.3)
       tailwindcss:
         specifier: ^3.3.3
         version: 3.3.3
@@ -518,9 +515,6 @@ importers:
       stylelint-config-standard:
         specifier: ^34.0.0
         version: 34.0.0(stylelint@15.10.3)
-      stylelint-prettier:
-        specifier: ^4.0.2
-        version: 4.0.2(prettier@3.0.3)(stylelint@15.10.3)
       tracked-built-ins:
         specifier: ^3.1.1
         version: 3.2.0
@@ -15357,18 +15351,6 @@ packages:
     dependencies:
       stylelint: 15.10.3(typescript@5.2.2)
       stylelint-config-recommended: 13.0.0(stylelint@15.10.3)
-    dev: true
-
-  /stylelint-prettier@4.0.2(prettier@3.0.3)(stylelint@15.10.3):
-    resolution: {integrity: sha512-EoHnR2PiaWgpGtoI4VW7AzneMfwmwQsNwQ+3/E2k/a+ju5yO6rfPfop4vzPQKcJN4ZM1YbspEOPu88D8538sbg==}
-    engines: {node: ^14.17.0 || >=16.0.0}
-    peerDependencies:
-      prettier: '>=3.0.0'
-      stylelint: '>=15.8.0'
-    dependencies:
-      prettier: 3.0.3
-      prettier-linter-helpers: 1.0.0
-      stylelint: 15.10.3(typescript@5.2.2)
     dev: true
 
   /stylelint@15.10.3(typescript@5.2.2):
