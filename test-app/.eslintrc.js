@@ -36,7 +36,6 @@ module.exports = {
         "./testem.js",
         "./config/**/*.js",
         "./lib/*/index.js",
-        "./server/**/*.js",
       ],
       env: {
         browser: false,

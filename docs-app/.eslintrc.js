@@ -40,7 +40,6 @@ module.exports = {
         "./config/**/*.js",
         "./lib/*/index.js",
         "./rehype-plugins/**/*.js",
-        "./server/**/*.js",
       ],
       env: {
         browser: false,
