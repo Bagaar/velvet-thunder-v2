@@ -3,7 +3,6 @@
 
 # misc
 !.*
-.lint-todo/
 
 # ember-try
 /.node_modules.ember-try/
