@@ -7,7 +7,6 @@
 
 # misc
 /.env*
-/.pnp*
 /.eslintcache
 /testem.log
 
