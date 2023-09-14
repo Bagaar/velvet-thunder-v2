@@ -37,7 +37,6 @@ module.exports = {
         "./postcss.config.js",
         "./tailwind.config.js",
         "./testem.js",
-        "./blueprints/*/index.js",
         "./config/**/*.js",
         "./lib/*/index.js",
         "./rehype-plugins/**/*.js",
