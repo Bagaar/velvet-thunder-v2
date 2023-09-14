@@ -7,7 +7,6 @@ node_modules/
 .env*
 .pnp*
 .pnpm-debug.log
-.sass-cache
 .eslintcache
 coverage/
 
