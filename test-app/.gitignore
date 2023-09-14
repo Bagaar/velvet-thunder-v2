@@ -13,7 +13,6 @@
 # ember-try
 /.node_modules.ember-try/
 /package.json.ember-try
-/package-lock.json.ember-try
 
 # broccoli-debug
 /DEBUG/
