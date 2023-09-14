@@ -8,5 +8,5 @@
 /dist
 /declarations
 
-# npm/pnpm/yarn pack output
+# pnpm pack output
 *.tgz

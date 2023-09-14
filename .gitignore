@@ -11,11 +11,9 @@ node_modules/
 .eslintcache
 coverage/
 npm-debug.log*
-yarn-error.log
 
 # ember-try
 /.node_modules.ember-try/
 /package.json.ember-try
 /package-lock.json.ember-try
-/yarn.lock.ember-try
 /pnpm-lock.ember-try.yaml
