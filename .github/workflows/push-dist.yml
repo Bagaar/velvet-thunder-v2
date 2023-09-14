@@ -17,12 +17,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install Node
-        uses: actions/setup-node@v3
+      - uses: wyvox/action-setup-pnpm@v2
         with:
-          cache: 'npm'
-      - uses: kategengler/put-built-npm-package-contents-on-branch@v1.0.0
+          node-version: 16
+      - uses: kategengler/put-built-npm-package-contents-on-branch@v2.0.0
         with:
           branch: dist
+          pack-command: pnpm pack
           token: ${{ secrets.GITHUB_TOKEN }}
           working-directory: velvet-thunder-v2
