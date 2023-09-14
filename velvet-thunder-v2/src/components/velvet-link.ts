@@ -35,7 +35,7 @@ export default class VelvetLink extends Component<VelvetLinkSignature> {
 
     if (typeof to === "string") {
       return this.linkManagerService.createLink(
-        this.linkManagerService.getLinkParamsFromURL(to),
+        this.linkManagerService.getLinkParamsFromURL(to)
       );
     }
 

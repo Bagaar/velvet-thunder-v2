@@ -42,7 +42,7 @@ interface VelvetTooltipSignature {
         toggle: () => void;
         content: ModifierLike<ContentSignature>;
         trigger: ModifierLike<TriggerSignature>;
-      },
+      }
     ];
   };
   Element: HTMLDivElement;
@@ -108,7 +108,7 @@ export default class VelvetTooltip extends Component<VelvetTooltipSignature> {
     const cleanupFloating = autoUpdate(
       triggerElement,
       contentElement,
-      updateFloating,
+      updateFloating
     );
 
     return cleanupFloating;
@@ -142,7 +142,7 @@ export default class VelvetTooltip extends Component<VelvetTooltipSignature> {
 
           resolve();
         }, this.showDelay);
-      }),
+      })
     );
   };
 

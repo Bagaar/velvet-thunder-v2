@@ -33,7 +33,7 @@ interface VelvetRadioGroupSignature {
           | "privateInGroup"
           | "privateOnChangeGroup"
         >;
-      },
+      }
     ];
   };
   Element: HTMLDivElement;
