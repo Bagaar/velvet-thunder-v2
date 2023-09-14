@@ -1,4 +1,5 @@
 packages:
   - docs-app
+  - tailwind
   - test-app
   - velvet-thunder-v2

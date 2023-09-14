@@ -35,6 +35,7 @@ module.exports = {
         "./.prettierrc.cjs",
         "./.template-lintrc.cjs",
         "./addon-main.cjs",
+        "./tailwind.cjs",
       ],
       parserOptions: {
         sourceType: "script",

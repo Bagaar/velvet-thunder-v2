@@ -1,0 +1,21 @@
+{
+  "name": "@velvet-thunder/tailwind",
+  "version": "0.0.0",
+  "description": "TODO",
+  "main": "index.js",
+  "scripts": {
+    "lint": "echo TODO",
+    "test": "echo TODO"
+  },
+  "keywords": [
+    "TODO"
+  ],
+  "author": "Bagaar",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
